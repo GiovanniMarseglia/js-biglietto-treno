@@ -6,7 +6,10 @@ let first_price = km * price;
 const under = 20;
 const over = 40;
 
-
+if(age == "" || km == ""){
+    document.writeln("I campi non possono rimanere vuoti10");
+}
+else{
 if (age < 18){
     total_price = first_price - ((first_price / 100) * under);
     document.writeln(`<p>Il prezzo del biglietto è di:${first_price.toFixed(2)}€, in quanto minorenne per lei è riserveto uno sconto del 20%. </P>`); 
@@ -19,4 +22,5 @@ else if (age > 65){
 }
 else{
     document.writeln(`<p>Il prezzo totale del biglietto è di: ${first_price.toFixed(2)}€ </P>`);
+}
 }
